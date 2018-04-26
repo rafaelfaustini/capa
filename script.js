@@ -17,6 +17,7 @@ function setup() {
   x1 = 0;
   x2 = 0;
 
+
 }
 
 function draw() {
@@ -37,10 +38,10 @@ function draw() {
   noStroke();
   fill(255, 255, 255);
   textFont(overpass);
+
   textAlign(CENTER, CENTER);
 
   textSize(25);
-  text("É muito fácil\n valorizar as pétalas de uma rosa mas eu prefiro\n fazê-la até mesmo se orgulhar\n de seus espinhos", 425.5, 155);
+  text(nome+"\n\nÉ muito fácil\n valorizar as pétalas de uma rosa mas eu prefiro\n fazê-la até mesmo se orgulhar\n de seus espinhos", 425.5, 155);
   textSize(10);
-  text("Rafael Faustini", 5, 298, 100);
 }
