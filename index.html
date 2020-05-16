@@ -1,11 +1,125 @@
-<html>
+<html lang="pt-br">
 <head>
- <meta charset = "UTF-8"/>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description"
+         content="Crie capas para facebook facilmente online">
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="../home/img/favicon/apple-touch-icon.webp" async>
+      <link rel="icon" type="image/webp" sizes="32x32" href="../home/img/favicon/favicon-32x32.webp" async>
+      <link rel="icon" type="image/webp" sizes="16x16" href="../home/img/favicon/favicon-16x16.webp" async>
+      <!--            -->
+      <!-- Primary Meta Tags -->
+      <meta name="description"
+         content="Crie capas para facebook facilmente online">
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://rafaelfaustini.com.br/cover">
+      <meta property="og:title" content="Rafael Faustini - Snizer Cover">
+      <meta property="og:description"
+         content="Crie capas para facebook facilmente online">
+      <meta property="og:image" content="../home/img/favicon/me.webp">
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://rafaelfaustini.com.br/cover">
+      <meta property="twitter:title" content="Rafael Faustini - Snizer Cover">
+      <meta property="twitter:description"
+         content="Crie capas para facebook facilmente online">
+      <meta property="twitter:image" content="../home/img/favicon/me.webp">
+      <meta name="author" content="Rafael Faustini">
+      <link rel="shortcut icon" href="favicon.ico" async />
+      <title>Rafael Faustini - Snizer Cover</title>
+      
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
  <script src="script.js"></script>
+<script data-ad-client="ca-pub-6258695903010400" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 </head>
 
 <body>
+<style>
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+</style>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<a class="navbar-brand" href="http://rafaelfaustini.com.br" style="margin-bottom:5px;">
+  <img src="logo.png" height="32" width="32" class="d-inline-block align-top" alt="">
+</a>
+  <a class="navbar-brand" href="http://rafaelfaustini.com.br">
+Snizer Cover
+  </a>
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+      </div>
+    </nav>
+
+<div class="container bg-faded" style="height:95%">
+<div class="row justify-content-center" style="padding-top:10%;">
+  <div class="row">
+    <div id="capa" class="col-sm text-center" ></div>
+  </div>
+
+<br>
+<div class="row w-25 text-center">
+<div class="mx-auto w-25 p-3 bg-dark text-white text-center">
+<div class="form-group">
+<input id="nome" class="form-control form-control-lg" value="Seu nome"/><br>
+<textarea id="frase" class="form-control form-control-lg" rows="3">Digite a frase</textarea><br>
+<input type="checkbox" id="enable_blur" value="enable_blur" checked> Blur
+<input type="checkbox" id="enable_lines" value="enable_lines" checked style="margin-left:5px;margin-bottom:15px;"> Linhas Diagonais<br>
+<label class="form-check-label" for="blur">Taxa de desfoque</label>
+<input type="range" min="0" max="10" value="3" class="slider" id="blur"><br>
+<label class="form-check-label" for="linhas">Tamanho das Linhas</label>
+<input type="range" min="7" max="40" value="10" class="slider" id="linhas"><br>
+<label class="form-check-label" for="fraselen">Tamanho da frase</label>
+<input type="range" min="5" max="30" value="20" class="slider" id="fraselen"><br>
+<button id="salvar" class="btn btn-success btn-lg">Salvar Capa</button>
+<button id="atualizar" class="btn btn-warning btn-lg">Ajustar Texto</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 </body>
 
